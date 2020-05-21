@@ -9,10 +9,10 @@ public class FizzBuzz {
 
     }
 
-  static String getStatus(int counter) {
+  static String getStatus(int value) {
     String status = "";
-    boolean counterIsFizz = (counter % 3 == 0); //this could be written in a if statement but its easier
-    boolean counterIsBuzz = (counter % 5 == 0);
+    boolean counterIsFizz = (value % 3 == 0); //this could be written in a if statement but its easier
+    boolean counterIsBuzz = (value % 5 == 0);
     if (counterIsFizz){
       status += "fizz";
     }
@@ -20,7 +20,7 @@ public class FizzBuzz {
       status += "buzz";
     }
     if (status.isEmpty()){
-      status += counter;
+      status += value;
     }
     return status;
   }
