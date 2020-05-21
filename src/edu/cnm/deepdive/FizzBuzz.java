@@ -24,6 +24,7 @@ public class FizzBuzz {
     }
     return status;
   }
+
 }
 
 
